@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Webpage</title>
+
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color for dark mode */
+            color: #fff; /* Light text color for dark mode */
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Center the content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Header with blinking text color animation */
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Blinking animation for text color */
+        @keyframes blink {
+            0% {
+                color: white;
+            }
+            50% {
+                color: red;
+            }
+            100% {
+                color: white;
+            }
+        }
+
+        /* Apply blinking animation to the header text */
+        header h1 {
+            display: inline-block;
+            animation: blink 1s infinite; /* 2s duration for one cycle, infinite repeat */
+            font-size: 5em;
+        }
+        img{
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Centered GIF -->
+    <img src="https://pishrocoin.com/pishro.gif?0.3935315718408674" alt="Centered GIF" >
+
+    <!-- Header with blinking text color animation -->
+    <header>
+        <h1>
+           ! ما داریم اینجا زحمت میکشیم
+        </h1>
+    </header>
+</div>
+
+</body>
+</html>
